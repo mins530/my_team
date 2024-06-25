@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>우리 팀 멤버들</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>우리 팀 멤버들</h1>
@@ -15,7 +17,8 @@
         <section class="team-members">
             <div class="member">
                 <a href="team-members/member1.html">
-                    <img src="https://i.namu.wiki/i/wq69JVXQQyHWIJ59M7nEKYPIzFSIQYgyPEPUfE0mAhXnOSwZQAxPT1LKTGb5mrYjZ0Ci8uCWD5aeSHMCnEEatlPaiohUuOKyWNooNuj08aWBzxUE5DkyTnIR-rye01_TPbp-Jkmyb6_C33Yzf38ijQ.webp" alt="Member 1"  width="300" height="200">
+                    <img src="https://i.namu.wiki/i/wq69JVXQQyHWIJ59M7nEKYPIzFSIQYgyPEPUfE0mAhXnOSwZQAxPT1LKTGb5mrYjZ0Ci8uCWD5aeSHMCnEEatlPaiohUuOKyWNooNuj08aWBzxUE5DkyTnIR-rye01_TPbp-Jkmyb6_C33Yzf38ijQ.webp"
+                        alt="Member 1" width="300" height="200">
                     <h2>멤버 1</h2>
                 </a>
             </div>
@@ -31,8 +34,35 @@
         </section>
     </main>
 
+    <div class="list-area"><!--작성한 코멘트가 입력될 공간.-->
+
+    </div>
+
+    <div class="reply-form__container"> <!--코멘트 입력란.-->
+        <div class="reply-form__info">
+            <div class="reply-form__user-info">
+                <span class="replay-form-title">코멘트 작성</span><br> 
+                <input class="reply-form-user-input" type="text" name="nickname" placeholder="이름" value="르탄이"
+                    required="required" tabindex="100"> <!--이름입력.-->
+                <input class="reply-form-user-input" type="password" name="password" placeholder="비밀번호" value=""
+                    required="required" tabindex="101"> <!--비밀번호 입력-->
+            </div>
+            <div class="reply-form-button-container">
+            </div>
+        </div>
+        <div class="reply-form-textarea-wrapper">
+            <textarea class="reply-form-textarea" name="content" maxlength="8000" required="required" tabindex="102"
+                placeholder="" style="height: 99.5px;"></textarea> <!--코멘트 입력-->
+            <div class="reply-form__submit-button-wrapper">
+                <button class="reply-form__submit-button" type="submit" id="commentFormButton"
+                    tabindex="103">작성</button> <!--작성버튼-->
+            </div>
+        </div>
+    </div> <!--서재일 06/26 수정예정입니다.-->
+
     <footer>
         <p>&copy; 2024 우리 팀</p>
     </footer>
 </body>
+
 </html>
