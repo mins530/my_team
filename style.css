@@ -1,0 +1,50 @@
+/* 전체 body 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* header 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* main 요소 스타일 */
+main {
+    padding: 1em;
+}
+
+/* 팀원 목록 스타일 */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* 각 팀원 카드 스타일 */
+.member {
+    border: 1px solid #ccc;
+    padding: 1em;
+    text-align: center;
+}
+
+.member img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* footer 스타일 */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
