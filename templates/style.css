@@ -91,6 +91,10 @@ main {
     display: flex;
     align-items: 0;
 }
+.card-body {
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+/* 코멘트 입력창 스타일 */
 .comment_box {
     background-color: #f9f9f9; /* 코멘트 배경색 */
     padding: 8px; /* 안쪽 여백 */
@@ -109,7 +113,7 @@ main {
     max-width: 98%; /* 최대 너비 지정 */
 }
 .comment-body {
-    text-align: left; /* 텍스트 가운데 정렬 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
 }
 
 /* footer 스타일 */
