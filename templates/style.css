@@ -36,6 +36,16 @@ header {
     padding: 1em;
 }
 
+.teamname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 10vh;
+    margin-bottom: 0;
+    height: 10vh;
+}
+
 /* main 요소 스타일 */
 main {
     padding: 1em;
@@ -43,6 +53,8 @@ main {
     align-items: center;
     min-height: 50vh;
     margin-bottom: 0;
+    margin-top: 1px;
+    padding-top: 1px;
     justify-content: center;
 }
 
@@ -73,7 +85,7 @@ main {
 
 .card {
     display: flex;
-    margin: 10px;
+    margin: 1px;
     align-items: center;
 }
 
