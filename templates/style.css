@@ -94,10 +94,10 @@ main {
 /* footer 스타일 */
 footer {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 10px 0;
     background-color: #333;
     color: #fff;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
 }
