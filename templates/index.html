@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     </head>
 
 <body>
@@ -100,46 +101,49 @@
             </div>
         </div>
 
-
-
-
-        <!-- 코멘트 코드 작성 구역 -->
-
-
         <p>
         <ul> <!-- 다른 팀원들도 동일한 방식으로 추가 -->
             </section>
+
+            <section id="commentsSection">
+                <h2>코멘트 작성</h2>
+                <div class="mb-3">
+                    <label for="commentInput" class="form-label">코멘트:</label>
+                    <textarea class="form-control" id="commentInput" rows="3" placeholder="여기에 코멘트를 입력하세요..."></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="addComment()">작성</button>
+    
+                <div class="list-area mt-4" id="commentsContainer">
+                    <!-- 작성한 코멘트가 입력될 공간 -->
+                </div>
+            </section>
+
     </main>
 
-    <div class="list-area"><!--작성한 코멘트가 입력될 공간.-->
-
-    </div>
-    <div class="reply-form__container"> <!--코멘트 입력란.-->
-        <div class="reply-form__info">
-            <div class="reply-form__user-info">
-                <span class="replay-form-title">코멘트 작성</span><br>
-                <input class="reply-form-user-input" type="text" name="nickname" placeholder="이름" value="르탄이"
-                    required="required" tabindex="100"> <!--이름입력.-->
-                <input class="reply-form-user-input" type="password" name="password" placeholder="비밀번호" value=""
-                    required="required" tabindex="101"> <!--비밀번호 입력-->
-            </div>
-            <div class="reply-form-button-container">
-            </div>
-        </div>
-        <div class="reply-form-textarea-wrapper">
-            <textarea class="reply-form-textarea" name="content" maxlength="8000" required="required" tabindex="102"
-                placeholder="" style="height: 99.5px;"></textarea> <!--코멘트 입력-->
-            <div class="reply-form__submit-button-wrapper">
-                <button class="reply-form__submit-button" type="submit" id="commentFormButton"
-                    tabindex="103">작성</button> <!--작성버튼-->
-            </div>
-        </div>
-    </div> <!--서재일 06/26 수정예정입니다.-->
     </ul>
     </p>
     <footer>
         <p>&copy; 2024 우리 팀</p>
     </footer>
+
+    <script>
+        function addComment() {
+            var commentInput = document.getElementById('commentInput');
+            var commentsContainer = document.getElementById('commentsContainer');
+
+            if (commentInput.value.trim() === '') {
+                alert('코멘트를 입력하세요');
+                return;
+            }
+
+            var newComment = document.createElement('div');
+            newComment.classList.add('card', 'mt-2');
+            newComment.innerHTML = `<div class="card-body">${commentInput.value}</div>`;
+
+            commentsContainer.appendChild(newComment);
+            commentInput.value = '';
+        }
+    </script>
 </body>
 
 </html>
