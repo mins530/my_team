@@ -6,56 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>우리 팀 멤버들</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
 
 <body>
-    <header>
-        <h1>우리 팀 멤버들</h1>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        </div>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
+    <!--  -->
     <main>
-        <section class="team-members">
-            <div class="member">
-                <a href="team-members/member1.html">
-                    <img src="https://i.namu.wiki/i/wq69JVXQQyHWIJ59M7nEKYPIzFSIQYgyPEPUfE0mAhXnOSwZQAxPT1LKTGb5mrYjZ0Ci8uCWD5aeSHMCnEEatlPaiohUuOKyWNooNuj08aWBzxUE5DkyTnIR-rye01_TPbp-Jkmyb6_C33Yzf38ijQ.webp"
-                        alt="Member 1" width="300" height="200">
-                    <h2>멤버 1</h2>
-                </a>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <img src="https://ca.slack-edge.com/T06B9PCLY1E-U078S7Z9U9W-e1cfe09eb194-512" width=286px, height=128px
+                    class="card-img-top" alt="...">
             </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">이름: 정성원님 </li>
+            </ul>
+            <div class="card-body">
+                <!-- 각자 TIL 블로그링크넣기 -->
+                <a href="https://sungwonjung.tistory.com/" class="card-link">Blog link</a>
+                <p><a href="team-members/member1.html" class="card-link">자기소개 페이지</a></p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <img src="https://cdn-icons-png.flaticon.com/512/10/10522.png" width=286px, height=128px
+                    class="card-img-top" alt="...">
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">이름: 배민석님 </li>
+            </ul>
+            <div class="card-body">
+                <!-- 각자 TIL 블로그링크넣기 -->
+                <a href="https://insight986.tistory.com/" class="card-link">Blog link</a>
+                <p><a href="team-members/member2.html" class="card-link">자기소개 페이지</a></p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <img src="https://ca.slack-edge.com/T06B9PCLY1E-U071G5R4NQ2-3dd8a1213719-512" width=286px, height=128px
+                    class="card-img-top" alt="...">
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">이름: 서재일님 </li>
+            </ul>
+            <div class="card-body">
+                    <!-- 각자 TIL 블로그링크넣기 -->
+                <a href="https://youtharchive.tistory.com/" class="card-link">Blog link</a>
+                <p><a href="team-members/member3.html" class="card-link">자기소개 페이지</a></p>
+            </div>
+        </div>
 
-            <div class="member">
-                <a href="team-members/member2.html">
-                    <img src="path_to_member2_image.jpg" alt="Member 2">
-                    <h2>멤버 2</h2>
-                </a>
-            </div>
 
-            <div class="member">
-                <a href="team-members/member3.html">
-                    <img src="path_to_member2_image.jpg" alt="Member 3">
-                    <h2>멤버 3</h2>
-                </a>
+        <!-- 멤버.html 파일 만들었습니다. 그리고 페이지는 각자 수정하는걸로 하고 인덱스 컨텐츠 정렬등 다음작업으로 갑시다 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <!-- 각자 사진넣기 -->
+                <img src="https://ca.slack-edge.com/T06B9PCLY1E-U0770GCR9U2-0234f2e6baa4-512" width=286px, height=128px
+                    class="card-img-top" alt="...">
             </div>
-<!-- 멤버.html 파일 만들었습니다. 그리고 페이지는 각자 수정하는걸로 하고 인덱스 컨텐츠 정렬등 다음작업으로 갑시다 -->
-            <div class="member">
-                <a href="team-members/member4.html">
-                    <img src="path_to_member2_image.jpg" alt="Member 4">
-                    <h2>멤버 4</h2>
-                </a>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">이름: 김경민B님 </li>
+            </ul>
+            <div class="card-body">
+                <!-- 각자 TIL 블로그링크넣기 -->
+                <a href="https://diary279.tistory.com/" class="card-link">Blog link</a>
+                <p><a href="team-members/member4.html" class="card-link">자기소개 페이지</a></p>
             </div>
+        </div>
 
-            <!-- 다른 팀원들도 동일한 방식으로 추가 -->
-        </section>
+
+
+
+        <!-- 코멘트 코드 작성 구역 -->
+
+
+        <p>
+        <ul> <!-- 다른 팀원들도 동일한 방식으로 추가 -->
+            </section>
     </main>
 
     <div class="list-area"><!--작성한 코멘트가 입력될 공간.-->
 
     </div>
-
     <div class="reply-form__container"> <!--코멘트 입력란.-->
         <div class="reply-form__info">
             <div class="reply-form__user-info">
-                <span class="replay-form-title">코멘트 작성</span><br> 
+                <span class="replay-form-title">코멘트 작성</span><br>
                 <input class="reply-form-user-input" type="text" name="nickname" placeholder="이름" value="르탄이"
                     required="required" tabindex="100"> <!--이름입력.-->
                 <input class="reply-form-user-input" type="password" name="password" placeholder="비밀번호" value=""
@@ -73,7 +135,8 @@
             </div>
         </div>
     </div> <!--서재일 06/26 수정예정입니다.-->
-
+    </ul>
+    </p>
     <footer>
         <p>&copy; 2024 우리 팀</p>
     </footer>
