@@ -91,6 +91,14 @@ main {
     display: flex;
     align-items: 0;
 }
+.comment_box {
+    background-color: #f9f9f9; /* 코멘트 배경색 */
+    padding: 8px; /* 안쪽 여백 */
+    border: 1px solid #ddd; /* 테두리 */
+    border-radius: 3px; /* 테두리 둥글게 */
+    max-width: 98%; /* 최대 너비 지정 */
+    width: 100%; /* 너비 100% 설정 */
+}
 /* 코멘트 스타일 */    
 .comment {
     background-color: #f9f9f9; /* 코멘트 배경색 */
@@ -98,11 +106,12 @@ main {
     margin-bottom: 8px; /* 아래 여백 */
     border: 1px solid #ddd; /* 테두리 */
     border-radius: 3px; /* 테두리 둥글게 */
+    max-width: 98%; /* 최대 너비 지정 */
 }
-
 .comment-body {
     text-align: left; /* 텍스트 가운데 정렬 */
 }
+
 /* footer 스타일 */
 footer {
     text-align: center;

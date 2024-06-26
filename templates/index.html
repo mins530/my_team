@@ -109,8 +109,7 @@
     <section id="commentsSection">
         <h2>코멘트 작성</h2>
         <div class="mb-3">
-            <label for="commentInput" class="form-label">코멘트:</label>
-            <textarea class="form-control" id="commentInput" rows="3" placeholder="여기에 코멘트를 입력하세요..."></textarea>
+            <textarea class="comment_box" id="commentInput" rows="3" placeholder="여기에 코멘트를 입력하세요."></textarea>
         </div>
         <button class="btn btn-primary" onclick="addComment()">작성</button>
 
@@ -130,7 +129,7 @@
             let commentsContainer = document.getElementById('commentsContainer');
 
             if (commentInput.value.trim() === '') {
-                alert('코멘트를 입력하세요');
+                alert('코멘트를 입력하세요.');
                 return;
             }
 
