@@ -176,6 +176,17 @@
             display: flex;
             justify-content: center;
         }
+        .additional-photo {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .additional-photo img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -205,6 +216,10 @@
         <!-- 뒤로가기 구현 -->
         <a id="back" href="../index.html" class="profile-button">뒤로가기</a>
     </div>
+            <!-- 추가 사진 부분 -->
+            <div class="additional-photo">
+                <img src="dance.png" alt="추가 사진">
+            </div>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
