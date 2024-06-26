@@ -41,12 +41,16 @@ main {
     padding: 1em;
     display: flex;
     align-items: center;
+    min-height: 50vh;
+    margin-bottom: 0;
+    justify-content: center;
 }
 
 /* 팀원 목록 스타일 */
 .team-members {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    justify-content: center;
     gap: 30px;
 }
 
@@ -67,6 +71,26 @@ main {
     justify-content: center
 }
 
+.card {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.reply-form__info{
+    display: flex;
+    justify-content: center;
+}
+
+.reply-form-textarea-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.reply-form__submit-button-wrapper{
+    display: flex;
+    align-items: 0;
+}
 /* footer 스타일 */
 footer {
     text-align: center;
