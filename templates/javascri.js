@@ -18,10 +18,10 @@ function addComment() {
 
 // 메인페이지 Search 입력 스크립트
 const teamMembers = {
-    "정성원님" : "team-members/member1.html",
-    "배민석님" : "team-members/member2.html",
-    "서재일님" : "team-members/member3.html",
-    "김경민B님" : "team-members/member4.html",
+    "정성원님" : "team-members./member1.html",
+    "배민석님" : "team-members./member2.html",
+    "서재일님" : "team-members./member3.html",
+    "김경민B님" : "team-members./member4.html",
     
 };
 
